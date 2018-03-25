@@ -20,7 +20,6 @@ public class Main {
         Map<LocalDate, Double> totalOutgoingPerDay = service.getTotalOutgoingPerDay(instructions);
         totalOutgoingPerDay.forEach((key, value) -> System.out.println("Day:" + key + " Total: " + Math.round(value * 100.0) / 100.0));
 
-
         System.out.println("Incoming Ranking:");
         Map<String, Double> totalIncoming = service.getOrderedTotalIncomingPerEntity(instructions);
         totalIncoming.forEach((key, value) -> System.out.println("Entity:" + key + " Total: " + Math.round(value * 100.0) / 100.0));
